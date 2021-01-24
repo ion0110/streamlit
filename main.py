@@ -65,7 +65,7 @@ condision = st.sidebar.slider('あなたの調子は',0, 100, 50)
 #checkbox
 if st.checkbox('画像表示'):
     #画像読み込み
-    img = Image.open('sample.jpg')
+    img = Image.open('sample.png')
     st.image(img, caption='キャプション', width=300, use_column_width=False)
 
 #selectbox
@@ -129,7 +129,3 @@ df3 = pd.DataFrame(
     columns = ['lat', 'lon']
 )
 st.map(df3)
-
-
-
-
